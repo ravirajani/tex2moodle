@@ -5,7 +5,7 @@ output = '<p>'
 with open(filename, encoding='utf-8') as f:
     for line in f:
         if line.startswith('\\['):
-            output += '\n$$'
+            output += '\n\n$$'
         if line.startswith('\\]'):
             output += '$$\n\n'
         elif not line.startswith('\\'):
