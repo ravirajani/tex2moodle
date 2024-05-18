@@ -7,7 +7,7 @@ with open(filename, encoding='utf-8') as f:
         if line.startswith('\\['):
             output += '\n$$'
         if line.startswith('\\]'):
-            output += '$$\n'
+            output += '$$\n\n'
         elif not line.startswith('\\'):
             if line.startswith('\n'):
                 output += '</p>\n<p>'
